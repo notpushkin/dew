@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dew"
+version = "0.1.0"
+description = "Simple parallel task runner for Python"
+authors = ["Alexander Pushkov <alexander@notpushk.in>"]
+license = "ISC"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+click = "^7.0"
+tqdm = "^4.31"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+dew = "dew:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
